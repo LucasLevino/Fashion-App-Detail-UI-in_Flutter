@@ -11,15 +11,17 @@ class SearchBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return Container(
       margin: EdgeInsets.all(20),
-      padding: EdgeInsets.symmetric(horizontal: 25, vertical: 5),
+      padding: EdgeInsets.symmetric( horizontal: 25, vertical: 5 ),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(50),
         border: Border.all(
           color: ksecondaryColor.withOpacity(0.32)
         )
       ),
+
       child: TextField(
         onChanged: onChaged,
         decoration: InputDecoration(
@@ -31,6 +33,7 @@ class SearchBox extends StatelessWidget {
           )
         ),
       ),
+      
     );
   }
 }

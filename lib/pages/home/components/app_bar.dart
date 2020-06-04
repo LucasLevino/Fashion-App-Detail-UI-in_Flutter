@@ -3,6 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:project_2/constants.dart';
 
 AppBar homeAppBar(BuildContext context) {
+
     return AppBar(
       backgroundColor: Colors.white,
       elevation: 0,
@@ -39,9 +40,12 @@ AppBar homeAppBar(BuildContext context) {
 
       actions: <Widget>[
         IconButton(
-          icon: SvgPicture.asset("assets/icons/notification.svg"), 
+          icon: SvgPicture.asset(
+            "assets/icons/notification.svg"
+          ), 
           onPressed: () {}
         )
       ],
     );
+    
   }
